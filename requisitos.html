@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Requisitos do Projeto</title>
+
+  <meta name="description" content="Tabela com todos os requisitos funcionais e não funcionais do projeto SGIB.">
+
+  <link rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous">
+
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+    }
+
+    main {
+      flex: 1;
+    }
+  </style>
+
+</head>
+
+<body>
+  
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">SGIB</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="objetivo_projeto.html">Objetivo do Projeto</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="publico_alvo.html">Público alvo</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="requisitos.html">Requisitos <span class="sr-only">(Página atual)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href=" historias_usuarios.html">Histórias de usuários</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="diagramas.html">Diagramas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="criterios.html">Critérios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="equipe.html">Equipe</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item active" aria-current="page">Requisitos</li>
+    </ol>
+  </nav>
+
+  <main class="container my-5">
+    <h1 class="text-center mb-4">REQUISITOS DO SISTEMA DE GESTÃO INTEGRADO DE BIBLIOTECA</h1>
+    
+    <h2 class="text-center mb-4">Visão Geral dos Requisitos do Projeto 👋​</h2>
+    <p class="text-center lead">
+      A tabela a seguir detalha todos os requisitos **Funcionais** (RF) e **Não Funcionais** (RNF) do projeto SGIB, juntamente com sua prioridade. 📙​📘​📗​
+    </p>
+
+    <hr>
+    
+    <h3 class="text-center mb-4">Tabela de Requisitos do SGIB</h3>
+    <div class="table-responsive">
+        <table class="table table-bordered table-striped">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col" style="width: 10%;">ID</th>
+                    <th scope="col" style="width: 15%;">Tipo</th>
+                    <th scope="col">Descrição do Requisito</th>
+                    <th scope="col" style="width: 15%;">Prioridade</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">RF01</th>
+                    <td>Funcional</td>
+                    <td>O sistema deve permitir que o usuário realize o cadastro online </td>
+                    <td>Alta</td>
+                </tr>
+                <tr>
+                    <th scope="row">RF02</th>
+                    <td>Funcional</td>
+                    <td>O usuário deve ser capaz de visualizar seu histórico de empréstimos </td>
+                    <td>Baixa</td>
+                </tr>
+                <tr>
+                    <th scope="row">RF03</th>
+                    <td>Funcional</td>
+                    <td>O sistema deve permitir que o usuário visualize o tempo de empréstimo restante </td>
+                    <td>Alta</td>
+                </tr>
+                <tr>
+                    <th scope="row">RF04</th>
+                    <td>Funcional</td>
+                    <td>O usuário deve ser capaz de visualizar os livros disponíveis no acervo </td>
+                    <td>Média</td>
+                </tr>
+                <tr>
+                    <th scope="row">RF05</th>
+                    <td>Funcional</td>
+                    <td>O usuário deve ser capaz de justificar perdas ou danificação do material </td>
+                    <td>Média</td>
+                </tr>
+                <tr>
+                    <th scope="row">RF06</th>
+                    <td>Funcional</td>
+                    <td>O sistema deve disponibilizar um meio de pagamento para as multas </td>
+                    <td>Alta</td>
+                </tr>
+                <tr>
+                    <th scope="row">RF07</th>
+                    <td>Funcional</td>
+                    <td>O sistema deve enviar lembretes ao usuário para a renovação do empréstimo </td>
+                    <td>Média</td>
+                </tr>
+                <tr>
+                    <th scope="row">RF08</th>
+                    <td>Funcional</td>
+                    <td>O sistema deve permitir que o usuário faça sugestões de livros para o acervo </td>
+                    <td>Baixa</td>
+                </tr>
+                <tr>
+                    <th scope="row">RF09</th>
+                    <td>Funcional</td>
+                    <td>O sistema deve suspender o acesso de usuários temporariamente suspensos </td>
+                    <td>Alta</td>
+                </tr>
+                <tr>
+                    <th scope="row">RF10</th>
+                    <td>Funcional</td>
+                    <td>O bibliotecário deve ser capaz de editar o acervo disponível </td>
+                    <td>Média</td>
+                </tr>
+                <tr>
+                    <th scope="row">RNF01</th>
+                    <td>Não funcional</td>
+                    <td>O sistema deve gerar multas automáticas por atraso dos livros </td>
+                    <td>Alta</td>
+                </tr>
+                <tr>
+                    <th scope="row">RNF02</th>
+                    <td>Não funcional</td>
+                    <td>O sistema deve ficar ativo 24 horas </td>
+                    <td>Alta</td>
+                </tr>
+                <tr>
+                    <th scope="row">RNF03</th>
+                    <td>Não funcional</td>
+                    <td>O sistema deve ter suporte 24 horas </td>
+                    <td>Média</td>
+                </tr>
+                <tr>
+                    <th scope="row">RNF04</th>
+                    <td>Não funcional</td>
+                    <td>O sistema deve funcionar para dispositivos móveis e computadores </td>
+                    <td>Alta</td>
+                </tr>
+                <tr>
+                    <th scope="row">RNF05</th>
+                    <td>Não funcional</td>
+                    <td>O sistema deve criptografar senhas </td>
+                    <td>Alta</td>
+                </tr>
+                <tr>
+                    <th scope="row">RNF06</th>
+                    <td>Não funcional</td>
+                    <td>O sistema deve pedir o e-mail institucional do usuário para melhor experiencia </td>
+                    <td>Baixa</td>
+                </tr>
+                <tr>
+                    <th scope="row">RNF07</th>
+                    <td>Não funcional</td>
+                    <td>O sistema deve disponibilizar em tempo real a disponibilidade dos livros </td>
+                    <td>Média</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    </main>
+
+  <footer class="bg-dark text-white text-center py-4 mt-auto">
+  <div class="container">
+    <p class="mb-1">Contato: SGIB.contato@ifal.edu.br</p>
+    <p class="mb-0">&copy; 2025 Instituto Federal de Alagoas. Todos os direitos reservados.</p>
+  </div>
+</footer>
+
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGaR9G4Q9ANmF6YFZ94i+6oDkG"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+</body>
+</html>
