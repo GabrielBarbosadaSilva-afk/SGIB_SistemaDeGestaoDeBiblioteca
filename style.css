@@ -1,0 +1,133 @@
+/*
+ * Arquivo: style.css
+ * Projeto: SGIB - Sistema de Gestão Integrado de Biblioteca
+ * Descrição: Estilos globais para modernizar o layout Bootstrap.
+ */
+
+/* ---------------------------------- */
+/* 1. RESET E TIPOGRAFIA GLOBAL       */
+/* ---------------------------------- */
+body {
+    /* Define uma família de fontes moderna e limpa */
+    font-family: 'Arial', 'Helvetica', sans-serif;
+    background-color: #f8f9fa; /* Fundo cinza claro */
+    color: #212529; /* Texto escuro */
+    min-height: 100vh;
+    text-align: center;
+}
+
+h1, h2, h3 {
+    font-weight: 700; /* Fontes em negrito para ênfase */
+    color: #000e1e; /* Títulos em azul primário */
+    padding-bottom: 0.3rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    /* --- ALTERAÇÃO AQUI: CENTRALIZA O TÍTULO PRINCIPAL --- */
+    text-align: center; 
+    /* ----------------------------------------------------- */
+    border-bottom: 3px solid #007bff; /* Linha de destaque */
+    display: inline-block;
+    padding-bottom: 0.5rem;
+    margin-bottom: 2rem !important;
+}
+
+.lead {
+    color: #6c757d; /* Texto guia em cinza */
+    font-size: 1.15rem;
+}
+
+/* ---------------------------------- */
+/* 2. BARRA DE NAVEGAÇÃO E RODAPÉ     */
+/* ---------------------------------- */
+.navbar {
+    border-bottom: 3px solid #28a745; /* Destaque verde no navbar */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+.navbar-brand {
+    font-weight: 900;
+    color: #28a745 !important; /* Marca em verde */
+}
+
+.navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.8) !important;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+    border-bottom: 2px solid transparent;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-item.active .nav-link {
+    color: #fff !important;
+    border-bottom: 2px solid #fff;
+}
+
+footer {
+    background-color: #343a40;
+    border-top: 3px solid #007bff; /* Destaque azul no rodapé */
+}
+
+/* ---------------------------------- */
+/* 3. CARTÕES E TABELAS               */
+/* ---------------------------------- */
+.card {
+    border: none; /* Remove a borda padrão do Bootstrap */
+    border-radius: 10px; /* Cantos arredondados */
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1); /* Sombra mais destacada */
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Efeito sutil de elevação */
+}
+
+.card-header {
+    border-radius: 10px 10px 0 0 !important;
+    font-weight: 600;
+}
+
+.table-responsive {
+    margin-top: 2rem;
+}
+
+.table {
+    border-radius: 10px;
+    overflow: hidden; /* Garante que os cantos arredondados do thead funcionem */
+}
+
+.table thead th {
+    background-color: #007bff; /* Cabeçalho da tabela azul */
+    color: white;
+    font-weight: 700;
+    border-bottom: none;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(0, 123, 255, 0.05); /* Zebra suave com cor primária */
+}
+
+/* ---------------------------------- */
+/* 4. ELEMENTOS DE CONTEÚDO           */
+/* ---------------------------------- */
+.breadcrumb {
+    background-color: #e9ecef; /* Cor de fundo suave para o breadcrumb */
+    border-radius: 0;
+}
+
+/* Estilo para listas em caixas de conteúdo */
+ul li, ol li {
+    margin-bottom: 0.5rem;
+}
+
+/* Estilo para links de botões (se usados) */
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    transition: background-color 0.3s ease;
+}
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
