@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Público Alvo do Projeto SGIB</title>
+
+  <meta name="description" content="Definição do público alvo do Sistema de Gestão Integrado de Biblioteca (SGIB), incluindo usuários e bibliotecários.">
+
+  <link rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous">
+
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+    }
+
+    main {
+      flex: 1;
+    }
+  </style>
+
+</head>
+
+<body>
+  
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">SGIB</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="objetivo_projeto.html">Objetivo do Projeto</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Público alvo <span class="sr-only">(Página atual)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="requisitos.html">Requisitos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href=" historias_usuarios.html">Histórias de usuários</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="diagramas.html">Diagramas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="criterios.html">Critérios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="equipe.html">Equipe</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item active" aria-current="page">Público Alvo</li>
+    </ol>
+  </nav>
+
+  <main class="container my-5">
+    <h1 class="text-center mb-4">PÚBLICO ALVO DO SISTEMA SGIB</h1>
+    
+    <p class="text-center lead">
+      O Sistema de Gestão Integrado de Biblioteca (SGIB) foi desenvolvido para atender às necessidades específicas da biblioteca e da comunidade escolar. Nosso público alvo principal se divide em dois grandes grupos:
+    </p>
+
+    <hr class="my-4">
+
+    <div class="row">
+        <div class="col-md-6 mb-4">
+            <div class="card h-100 border-primary shadow">
+                <div class="card-header bg-primary text-white">
+                    <h3 class="card-title mb-0">👨‍🎓 Usuários Finais (Comunidade Escolar)</h3>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">Este grupo é composto por todos os membros da instituição que utilizam o acervo e os serviços da biblioteca para fins de estudo, pesquisa e leitura recreativa. Eles se beneficiarão das funcionalidades de consulta, empréstimo e gestão de histórico.</p>
+                    <ul>
+                        <li>**Alunos:** Estudantes de todos os níveis que precisam de materiais didáticos e apoio à pesquisa.</li>
+                        <li>**Professores:** Educadores que realizam consultas, reservam materiais para aulas e gerenciam recursos para atividades pedagógicas.</li>
+                        <li>**Servidores:** Funcionários da escola que acessam o acervo para pesquisa ou empréstimo.</li>
+                    </ul>
+                    <p class="font-weight-bold mt-3">Interesses Principais:</p>
+                    <p class="text-muted">Facilidade no cadastro online, consulta rápida ao acervo, visualização do histórico de empréstimos e recebimento de notificações para evitar multas.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 mb-4">
+            <div class="card h-100 border-success shadow">
+                <div class="card-header bg-success text-white">
+                    <h3 class="card-title mb-0">👩‍💼 Administradores (Equipe da Biblioteca)</h3>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">Este grupo é responsável pela gestão e manutenção do sistema e do acervo físico. Eles necessitam de ferramentas robustas para controle de inventário, cadastro de usuários e aplicação de regras de empréstimo.</p>
+                    <ul>
+                        <li>**Bibliotecários:** Profissionais que gerenciam o acervo, aplicam regras de empréstimo/multa, editam o banco de dados e auxiliam no cadastro de novos usuários.</li>
+                        <li>**Auxiliares Administrativos:** Pessoal de suporte que ajuda na manutenção do controle de prazos e na organização do acervo.</li>
+                    </ul>
+                    <p class="font-weight-bold mt-3">Interesses Principais:</p>
+                    <p class="text-muted">Controle de empréstimos, suspensão de usuários, edição do acervo e geração automática de multas.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    </main>
+
+  <footer class="bg-dark text-white text-center py-4 mt-auto">
+  <div class="container">
+    <p class="mb-1">Contato: SGIB.contato@ifal.edu.br</p>
+    <p class="mb-0">&copy; 2025 Instituto Federal de Alagoas. Todos os direitos reservados.</p>
+  </div>
+</footer>
+
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGaR9G4Q9ANmF6YFZ94i+6oDkG"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+</body>
+</html>
