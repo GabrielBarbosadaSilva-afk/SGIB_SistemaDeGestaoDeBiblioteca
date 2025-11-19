@@ -5,18 +5,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Página inicial</title>
+  <title>Diagramas do Projeto SGIB</title>
 
-  <!-- Meta descrição para SEO -->
-  <meta name="description" content="Página inicial">
+  <meta name="description" content="Diagrama de Classes e Diagrama de Casos de Uso do Sistema de Gestão de Biblioteca (SGIB).">
 
-  <!-- CSS do Bootstrap -->
   <link rel="stylesheet"
     href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
     crossorigin="anonymous">
 
-<!-- CSS customizado para o rodapé ficar fixo embaixo -->
   <style>
     html, body {
       height: 100%;
@@ -31,6 +28,14 @@
     main {
       flex: 1;
     }
+    /* Estilo adicional para centralizar imagens grandes se a classe Bootstrap não for suficiente */
+    .diagram-container {
+        text-align: center;
+    }
+    .diagram-img {
+        max-width: 100%;
+        height: auto;
+    }
   </style>
 
 </head>
@@ -38,7 +43,6 @@
 <body>
   
 
-  <!-- Barra de navegação -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
       <a class="navbar-brand" href="#">SGIB</a>
@@ -49,8 +53,8 @@
 
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(Página atual)</span></a>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="objetivo_projeto.html">Objetivo do Projeto</a>
@@ -62,10 +66,10 @@
             <a class="nav-link" href="requisitos.html">Requisitos</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="historias_usuarios.html">Histórias de usuários</a>
+            <a class="nav-link" href=" historias_usuarios.html">Histórias de usuários</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="diagramas.html">Diagramas</a>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Diagramas <span class="sr-only">(Página atual)</span></a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="criterios.html">Critérios</a>
@@ -78,29 +82,39 @@
     </div>
   </nav>
 
-  <!-- Breadcrumb -->
   <nav aria-label="breadcrumb">
     <ol class="breadcrumb">
-      <li class="breadcrumb-item active" aria-current="page">Home</li>
+      <li class="breadcrumb-item active" aria-current="page">Diagramas</li>
     </ol>
   </nav>
 
-  <!-- Conteúdo principal  (main)-->
   <main class="container my-5">
-    <h1 class="text-center mb-4">SISTEMA DE GESTÃO INTEGRADO DE BIBLIOTECA</h1>
-   
-    <h1 class="text-center mb-4">Bem-vindo(a)! 👋​</h1>
+    <h1 class="text-center mb-4">MODELAGEM ESTRUTURAL DO SGIB</h1>
+    
+    <h2 class="text-center mb-4">Diagramas do Projeto 👋​</h2>
     <p class="text-center lead">
-      Explore a página e descubra mais sobre nosso projeto! 📙​📘​📗​
+      Explore os diagramas UML que representam a estrutura e as funcionalidades do Sistema de Gestão Integrado de Biblioteca. 📚​
     </p>
-  </section>
-</main>
 
-  </main>
+    <hr>
+    
+    <section class="diagram-container mb-5">
+        <h3 class="mb-4">1. Diagrama de Classes</h3>
+        <p class="text-muted">Representa a estrutura do sistema, mostrando as classes, seus atributos, métodos e os relacionamentos estáticos entre elas.</p>
+        <img src="image_9635e5.png" alt="Diagrama de Classes do Sistema de Biblioteca" class="img-fluid diagram-img my-4">
+    </section>
+    
+    <hr>
 
-  <!-- Rodapé -->
+    <section class="diagram-container mb-5">
+        <h3 class="mb-4">2. Diagrama de Casos de Uso</h3>
+        <p class="text-muted">Representa as funcionalidades do sistema e como os usuários interagem com ele, definindo o escopo do projeto.</p>
+        <img src="image_96365f.png" alt="Diagrama de Casos de Uso do Sistema de Biblioteca" class="img-fluid diagram-img my-4">
+    </section>
+    
+    </main>
 
-<footer class="bg-dark text-white text-center py-4 mt-auto">
+  <footer class="bg-dark text-white text-center py-4 mt-auto">
   <div class="container">
     <p class="mb-1">Contato: SGIB.contato@ifal.edu.br</p>
     <p class="mb-0">&copy; 2025 Instituto Federal de Alagoas. Todos os direitos reservados.</p>
@@ -109,7 +123,6 @@
 
 
 
-  <!-- Scripts do Bootstrap -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
